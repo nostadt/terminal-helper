@@ -9,6 +9,7 @@ function gitBranchSimple() {
 }
 
 function gitUpdateLocalRepository() {
+  echo "$(tput bold)Update local repository started$(tput sgr0)"
   currentBranch=$(gitBranchSimple)
   echo "Checking out master...";
   git checkout master
@@ -21,3 +22,6 @@ function gitUpdateLocalRepository() {
   echo "Switch back to original branch...";
   git checkout $currentBranch
 }
+
+alias git-describe-edit='git branch --edit-description $(gitBranchSimple)'
+alias git-describe='git config branch.$(gitBranchSimple).description'
