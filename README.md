@@ -20,6 +20,8 @@ source ~/terminal-helper/dev/.misc.sh
 source ~/terminal-helper/dev/.vagrant.sh
 ```
 
+Blog Entry about `.bash_profile` and such: https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e
+
 ### Q/A
 
 Q: Purposes:  
