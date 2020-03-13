@@ -1,0 +1,17 @@
+{
+    "name": "amartinno1/terminal-helper",
+    "description": "Helper stuff I like to use when working with a terminal.",
+    "homepage": "https://github.com/AMartinNo1/terminal-helper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Nostadt"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/AMartinNo1/terminal-helper/issues",
+        "source": "https://github.com/AMartinNo1/terminal-helper"
+    },
+    "require": {}
+}
