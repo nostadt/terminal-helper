@@ -1,26 +1,27 @@
 # Terminal Helper
 
-This repository contains following kind of terminal helper:
-* shortcuts
-  * vagrant
-  * ddev
-  * git
-  * "misc"
+This terminal helper is maintained on a macOS machine.
+Since mid of March 2020 I am using the [Zsh](http://www.zsh.org/) shell.
+Therefore each script is expected to work on zsh shell only.
 
-The scripts have been tested with macOS.
-  
-### How To:
-To enable helper such as shortcuts you have to include the file(s) in your configured file
-which is included upon terminal start. If you have checkout'd the terminal-helper repository in
-your home-root you can use following script to enable various shortcuts:
+This library contains various kind of helper, yet each tool has it's own file
+and can be included as you need.
+
+Quick setup: 
+
 ```
-source ~/terminal-helper/dev/.ddev.sh
-source ~/terminal-helper/dev/.git.sh
-source ~/terminal-helper/dev/.misc.sh
-source ~/terminal-helper/dev/.vagrant.sh
+cd ~
+composer create-project amartinno1/terminal-helper:^2.0.0
 ```
 
-Blog Entry about `.bash_profile` and such: https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e
+Then open `vim ~/.zshrc` and the scripts you need.
+
+```
+source ~/terminal-helper/scripts/.ddev.sh
+source ~/terminal-helper/scripts/.git.sh
+source ~/terminal-helper/scripts/.misc.sh
+source ~/terminal-helper/scripts/.vagrant.sh
+```
 
 ### Q/A
 
