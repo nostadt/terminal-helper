@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://poser.pugx.org/amartinno1/terminal-helper/v/stable)](https://packagist.org/packages/amartinno1/terminal-helper)
+[![License](https://poser.pugx.org/amartinno1/terminal-helper/license)](https://packagist.org/packages/amartinno1/terminal-helper)
+
 # Terminal Helper
 
 This terminal helper is maintained on a macOS machine.
