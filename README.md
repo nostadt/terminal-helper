@@ -17,7 +17,7 @@ cd ~
 composer create-project amartinno1/terminal-helper:^2.0.0
 ```
 
-Then open `vim ~/.zshrc` and the scripts you need.
+Then open `vim ~/.zshrc` and add the scripts you need.
 
 ```
 source ~/terminal-helper/scripts/.ddev.sh
