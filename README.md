@@ -10,7 +10,11 @@ Therefore each script is expected to work on zsh shell only.
 This library contains various kind of helper, yet each tool has it's own file
 and can be included as you need.
 
-Quick setup: 
+## Install & setup:
+
+The setup is pretty straight forward and does not require much time.
+
+### Include Terminal Helper
 
 ```
 cd ~
@@ -26,7 +30,16 @@ source ~/terminal-helper/scripts/.misc.sh
 source ~/terminal-helper/scripts/.vagrant.sh
 ```
 
-### Q/A
+### Setup
+
+In order to have the same directory structure on every machine, I have created a setup script.
+
+`./setup/.directories.sh` can be used to generate these directories:
+* `~/web/` (for Web-Development)
+* `~/git-repositories/github.com/` (for GitHub clones)
+* `~/git-repositories/gitlab.org/` (for GitLab clones)
+
+## Q/A
 
 Q: Purposes:  
 A: I host it for various reasons in a public repo:  
