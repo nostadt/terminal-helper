@@ -6,6 +6,7 @@ echo "";
 echo "~/web/";
 echo "~/git-repositories/github.com/";
 echo "~/git-repositories/gitlab.org/";
+echo "~/git-repositories/bitbucket.org/";
 echo "";
 echo "Continue? [y/n]";
 read continue;
@@ -49,4 +50,12 @@ if [[ ! -d "$HOME/git-repositories/gitlab.org/" ]]
     mkdir -v "$HOME/git-repositories/gitlab.org/";
   else
     echo "$HOME/git-repositories/gitlab.org/ already exists";
+fi
+
+if [[ ! -d "$HOME/git-repositories/bitbucket.org/" ]]
+  then
+    echo "Make $HOME/git-repositories/bitbucket.org/";
+    mkdir -v "$HOME/git-repositories/bitbucket.org/";
+  else
+    echo "$HOME/git-repositories/bitbucket.org/ already exists";
 fi

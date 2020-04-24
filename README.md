@@ -38,6 +38,7 @@ In order to have the same directory structure on every machine, I have created a
 * `~/web/` (for Web-Development)
 * `~/git-repositories/github.com/` (for GitHub clones)
 * `~/git-repositories/gitlab.org/` (for GitLab clones)
+* `~/git-repositories/bitbucket.org/` (for bitbucket clones)
 
 ## Q/A
 
