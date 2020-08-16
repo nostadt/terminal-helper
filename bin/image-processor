@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+echo "--------------------------------------------------------------------------------------------";
+echo "| ";
+echo "| FFF Resize Pictures ";
+echo "|";
+echo "| Version: 1.0.0";
+echo "|";
+echo "| Description:";
+echo "| This tool resizes pictures to a maximum size of 1024x1024 and respects the ratio.";
+echo "| Currently the size cannot be overridden. However, this might be possible in the future.";
+echo "|";
+echo "--------------------------------------------------------------------------------------------";
+echo "";
+echo "Preamble:";
+echo "Before any changes are made to files, this tool asks you to confirm the determined path.";
+echo "";
+echo "# Step 1:";
+echo "Working path:";
+echo "$(pwd)";
+echo "";
+echo "Is that correct? [y/n]:";
+read isPathCorrect;
+
+if [[ $isPathCorrect == 'n' ]];
+  then
+    exit;
+fi
+
+echo "# Step 2";
+echo "Following files will be modified:";
+echo "";
+for f in $(ls "$(pwd)"/);
+  do echo $f;
+done
+
+echo "";
+echo "Correct? [y/n]:";
+read isFileListCorrect;
+if [[ $isFileListCorrect == 'n' ]];
+  then
+    exit;
+fi
+
+echo "";
+echo "Following steps will be executed:";
+echo "1. Copy each files with width/height suffix";
+echo "2. Rescale each copied image";
+
+echo "in progress..";
+
+for f in $(ls "$(pwd)"/);
+  do
+  newFile=$(sed 's/.JPG/-resized.JPG/g' <<< "$f");
+  sips -Z 1024 -s format jpeg $f --out "$newFile"
+done
