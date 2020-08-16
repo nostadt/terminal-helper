@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+# This file is used in the corresponding git alias
+git commit --amend --no-edit --date "$(date)"
