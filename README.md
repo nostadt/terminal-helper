@@ -14,31 +14,16 @@ and can be included as you need.
 
 The setup is pretty straight forward and does not require much time.
 
-### Include Terminal Helper
-
 ```
 cd ~
-composer create-project amartinno1/terminal-helper:^2.0.0
+composer create-project amartinno1/terminal-helper:^3.0.0
+setup/.directories.sh
+setup/.register-git-alias.sh
+vim ~/.zshrc
+#> source ~/terminal-helper/scripts/.ddev.sh
+#> source ~/terminal-helper/scripts/.misc.sh
+#> source ~/terminal-helper/scripts/.vagrant.sh
 ```
-
-Then open `vim ~/.zshrc` and add the scripts you need.
-
-```
-source ~/terminal-helper/scripts/.ddev.sh
-source ~/terminal-helper/scripts/.git.sh
-source ~/terminal-helper/scripts/.misc.sh
-source ~/terminal-helper/scripts/.vagrant.sh
-```
-
-### Setup
-
-In order to have the same directory structure on every machine, I have created a setup script.
-
-`./setup/.directories.sh` can be used to generate these directories:
-* `~/web/` (for Web-Development)
-* `~/git-repositories/github.com/` (for GitHub clones)
-* `~/git-repositories/gitlab.org/` (for GitLab clones)
-* `~/git-repositories/bitbucket.org/` (for bitbucket clones)
 
 ## Q/A
 

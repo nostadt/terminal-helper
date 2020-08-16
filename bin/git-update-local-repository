@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+echo "$(tput bold)Update local repository started$(tput sgr0)"
+currentBranch=$(git branch --show-current)
+echo "Checking out master...";
+git checkout master
+echo "Pulling latest commits from remote master...";
+git pull
+echo "Checking out development...";
+git checkout development
+echo "Pulling latest commits from remote develop...";
+git pull
+echo "Switch back to original branch...";
+git checkout $currentBranch
