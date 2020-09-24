@@ -19,6 +19,8 @@ cd ~
 composer create-project amartinno1/terminal-helper:^3.0.0
 setup/.directories.sh
 setup/.register-git-alias.sh
+vim ~/.zshrc
+#> export PATH=$HOME/terminal-helper/bin:$PATH
 ```
 
 ## Q/A
