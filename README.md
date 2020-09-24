@@ -7,6 +7,8 @@ This terminal helper is maintained on a macOS machine.
 Since mid of March 2020 I am using the [Zsh](http://www.zsh.org/) shell.
 Therefore each script is expected to work on zsh shell only.
 
+When using zsh shell you may also want to check out https://github.com/ohmyzsh/ohmyzsh/
+
 This library contains various kind of helper, yet each tool has it's own file
 and can be included as you need.
 
