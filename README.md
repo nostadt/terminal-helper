@@ -19,10 +19,6 @@ cd ~
 composer create-project amartinno1/terminal-helper:^3.0.0
 setup/.directories.sh
 setup/.register-git-alias.sh
-vim ~/.zshrc
-#> source ~/terminal-helper/scripts/.ddev.sh
-#> source ~/terminal-helper/scripts/.misc.sh
-#> source ~/terminal-helper/scripts/.vagrant.sh
 ```
 
 ## Q/A
