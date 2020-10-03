@@ -30,7 +30,8 @@ fi
 for i in $DIRECTORIES; do
   if [[ ! -d $i ]]
     then
-      echo "Make $i";
+      echo "Make $i...";
+      mkdir -p $i;
     else
       echo "$i already exists";
   fi
