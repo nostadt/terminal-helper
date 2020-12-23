@@ -3,7 +3,7 @@
 
 # Terminal Helper
 
-This terminal helper is maintained on a macOS machine.
+This terminal helper is maintained on a macOS but used on a macOS and a Linux machine.
 Since mid of March 2020 I am using the [Zsh](http://www.zsh.org/) shell.
 Therefore each script is expected to work on zsh shell only.
 
