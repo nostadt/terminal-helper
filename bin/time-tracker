@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+seconds=0
+
+if [[ -z $1 ]]
+  then
+    echo "Provide a reason for your tracking. For example a ticket number."
+    exit 1
+fi
+
+while :
+do
+  seconds=$(expr $seconds + 1)
+  sleep 1
+  currentHours=$(expr $seconds / 3600)
+  currentMinutes=$(expr $seconds / 60)
+  currentSeconds=$(expr $seconds % 60)
+  printf "> ${1}: ${currentHours}h ${currentMinutes}m ${currentSeconds}s\r"
+done
+
+exit 0

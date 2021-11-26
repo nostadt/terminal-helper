@@ -25,6 +25,18 @@ vim ~/.zshrc
 #> export PATH=$HOME/terminal-helper/bin:$PATH
 ```
 
+## Features
+
+**Terminal based time tracker**
+
+In order to track times, the script time-tracker can be used. Example:
+
+```shell
+time-tracker TICKET-NUMBER
+```
+
+For the time being it is mandatory to provide an argument.
+
 ## Q/A
 
 Q: Purposes:  
