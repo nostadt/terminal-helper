@@ -1,5 +1,5 @@
 [![Latest Stable Version](https://poser.pugx.org/amartinno1/terminal-helper/v/stable)](https://packagist.org/packages/amartinno1/terminal-helper)
-[![License](https://poser.pugx.org/amartinno1/terminal-helper/license)](https://packagist.org/packages/amartinno1/terminal-helper)
+[![License](https://poser.pugx.org/nostadt/terminal-helper/license)](https://packagist.org/packages/nostadt/terminal-helper)
 
 # Terminal Helper
 
@@ -18,7 +18,7 @@ The setup is pretty straight forward and does not require much time.
 
 ```
 cd ~
-composer create-project amartinno1/terminal-helper:^3.0.0
+composer create-project nostadt/terminal-helper:^3.0.0
 setup/.directories.sh
 setup/.register-git-alias.sh
 vim ~/.zshrc
