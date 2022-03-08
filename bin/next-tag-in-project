@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+git fetch
+echo "(performed 'git fetch')"
+
+echo "Last 4 tags:"
+git tag --sort=-creatordate | head -4
+
+echo "____"
+releasesThisWeek=$(git tag | grep -c $(date +"%Y.%-U"))
+echo "$releasesThisWeek release/s this week"
+
+echo ""
+releaseVersion=$(date +"%Y.%-U.$releasesThisWeek")
+echo "New tag: $releaseVersion"
